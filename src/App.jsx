@@ -345,10 +345,11 @@ function App() {
   const [selectedLead, setSelectedLead] = useState(null);
 
   useEffect(() => {
+    const API_URL = 'https://leads-dashboard-backend-production.up.railway.app';
     // Fetch Leads
-    const fetchLeads = fetch('http://localhost:8000/api/leads').then(res => res.json());
+    const fetchLeads = fetch(`${API_URL}/api/leads`).then(res => res.json());
     // Fetch Analytics
-    const fetchAnalytics = fetch('http://localhost:8000/api/analytics').then(res => res.json());
+    const fetchAnalytics = fetch(`${API_URL}/api/analytics`).then(res => res.json());
 
     Promise.all([fetchLeads, fetchAnalytics])
       .then(([leadsData, analyticsData]) => {
