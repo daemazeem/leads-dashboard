@@ -24,7 +24,7 @@
   --volume-color: #64748b;
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: var(--zinc-950);
+  background-color: #ffffff;
   color: var(--zinc-100);
 }
 
@@ -36,7 +36,7 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--zinc-950);
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
